@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"><meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+	<style>
+		body{background-color: #FFFEDA;}
+ #num1{color: #8C8351;}
+ #num2{color: #CF7287;}
+ #button1{ padding-left: 30px;
+ padding-right:30px; margin:20px;}
+ #button2{margin: 20px;padding-left: 30px;
+ padding-right:30px;}
+ #button3{margin: 20px; padding-left: 30px;
+ padding-right:30px;}
+ #button4{margin: 20px; padding-left: 30px;
+ padding-right:30px;}
+ #button5{margin: 20px; padding-left: 30px;
+ padding-right:30px;}
+	</style>
+</head>
+<body>
+<center>
+	<form class="form-group">
+		<label id="num1">Enter value for x</label>
+		<input type="number" class="form-control" id="input1" placeholder="Enter here">
+
+		<label id="num2">Enter value for y</label>
+		<input type="number" class="form-control" id="input2" placeholder="Enter here">
+
+		<div class="col-md-5"><button class="btn btn-warning" id="button1" onclick="add()">Sum of X and Y</button></div>
+		<div class="col-md-8"><button class="btn btn-warning" id="button2" onclick="product()">Product of X and Y</button></div>
+		<div class="col-md-9"><button class="btn btn-warning" id="button3" onclick="compare()">is X greater than Y</button></div>
+		<div class="col-md-10"><button class="btn btn-warning" id="button4" onclick="_equal()">is X equal to Y</button></div>
+		<div class="col-md-11"><button class="btn btn-warning" id="button5" onclick="quotient()">Quotient of X and Y</button></div>
+	</form>
+<script type="text/javascript">
+	function add(){
+		var num1 = document.getElementById("input1").value;
+		var num2 = document.getElementById("input2").value;
+		var sum = Number(num1) + Number(num2);
+
+		window.alert("the sum of x and y is: " + sum);
+	}
+
+	function product(){
+		var num1 = document.getElementById("input1").value;
+		var num2 = document.getElementById("input2").value;
+		var product = Number(num1) * Number(num2);
+
+		window.alert("the product of x and y is: " + product);
+	}
+function compare(){
+		var num1 = document.getElementById("input1").value;
+		var num2 = document.getElementById("input2").value;
+		var compare = Number(num1) > Number(num2);
+
+		window.alert("Is x greater than y: " + compare);
+	}
+function _equal(){
+		var num1 = document.getElementById("input1").value;
+		var num2 = document.getElementById("input2").value;
+		var _equal = Number(num1) == Number(num2);
+
+		window.alert("Is x equal to y: " + _equal);
+	}
+function quotient(){
+		var num1 = document.getElementById("input1").value;
+		var num2 = document.getElementById("input2").value;
+		var quotient = Number(num1) / Number(num2);
+
+		window.alert("Is x equal to y: " + quotient);
+	}
+
+</script>
+
+</center>
+
+
+</body>
+</html>
